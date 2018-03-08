@@ -32,7 +32,17 @@ class App extends Component {
           ]})
 
   }
+
+
+    togglesPersonHandler = () => {
+        const doesShow = this.state.showPersons;
+        this.setState({
+            showPersons:!doesShow
+        });
+    }
+
   render() {
+
     const style ={
       backgroundColor:'white',
       font: 'inherit',
@@ -40,12 +50,6 @@ class App extends Component {
       padding: '8px',
       cursor: 'pointer'
     };
-
-      togglesPersonHandler = () => {
-          const doesShow = this.state.showPersons;
-          this.set
-
-      }
 
     return (
       <div className="App">
