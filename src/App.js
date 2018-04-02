@@ -21,6 +21,7 @@ deletePersonHandler = (personIndex) => {
 }
 
   nameChangeHandler = (event, id)=> {
+
       const personIndex = this.state.persons.findIndex(p => {
          return p.id === id;
       });
